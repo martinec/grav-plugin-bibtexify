@@ -9,7 +9,7 @@ author:
 homepage: https://github.com/martinec/grav-plugin-bibtexify
 keywords: ui, plugin, bibtex, shortcode
 bugs: https://github.com/martinec/grav-plugin-bibtexify/issues
-docs: https://github.com/getgrav/grav-plugin-bibtexify/blob/develop/README.md
+docs: https://github.com/martinec/grav-plugin-bibtexify/blob/master/README.md
 license: MIT
 
 dependencies:
