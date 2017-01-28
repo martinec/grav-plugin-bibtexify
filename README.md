@@ -91,7 +91,7 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 
 # Known issues
 
-- [bib-publication-list](https://github.com/vkaravir/bib-publication-list) have some issues dealing with escaped characters. A possible workaround is to use [JabRef](http://www.jabref.org) to convert the LaTeX encodings to Unicode characters as follows: `Menu Edit > Select All' then 'Menu Quality > Cleanup entries', finally add a new formatter for `all-text-fields` with the operation `Latex to Unicode` and click OK.
+- [bib-publication-list](https://github.com/vkaravir/bib-publication-list) have some issues dealing with escaped characters. A possible workaround is to use [JabRef](http://www.jabref.org) to convert the LaTeX encodings to Unicode characters as follows: `Menu Edit > Select All` then `Menu Quality > Cleanup entries`, finally add a new formatter for `all-text-fields` with the operation `Latex to Unicode` and click OK.
 
 # Credits
 
