@@ -85,7 +85,8 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 <tr><td>tweet</td><td>Twitter username to add Tweet links to bib items with a url field.</td></tr>
 <tr><td>sorting</td><td>Control the default sorting of the list. Defaults to `[[0, "desc"], [1, "desc"]]`. See (https://legacy.datatables.net/api#fnSort) for details on formatting.</td></tr>
 <tr><td>datatable</td><td>Pass options to the datatable library used to create the table of publications. See (https://legacy.datatables.net/api) for available options.</td></tr>
-<tr><td>defaultYear</td><td>Entries without a year will use this as year. Defaults to "To Appear".
+<tr><td>defaultYear</td><td>Entries without a year will use this as year. Defaults to "To Appear".</td>
+<tr><td>hideMissing</td><td>A boolean to control when the missing mentions of a reference are visible. This option is not avalaible on [bib-publication-list](https://github.com/vkaravir/bib-publication-list). Defaults to false.</td></tr>
 </tbody>
 </table>
 
@@ -95,4 +96,4 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 
 # Credits
 
-This plugin use a minimal modified version of  [bib-publication-list](https://github.com/vkaravir/bib-publication-list). The bib-publication-list author is [vkaravir](https://github.com/vkaravir).
+This plugin use a minimal modified version of [bib-publication-list](https://github.com/vkaravir/bib-publication-list). The bib-publication-list author is [vkaravir](https://github.com/vkaravir).
