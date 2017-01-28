@@ -1,0 +1,18 @@
+{% set bibtexify_id = 'bibtexify-' ~ hash ~ '-' %}
+{% set bibtex_id = 'bibtex-' ~ hash ~ '-' %}
+
+<table id="{{ bibtexify_id }}" class="display"></table>
+<pre id="{{ bibtex_id }}" class="raw-bibtex js-hidden">{{ bibtexify.getContent()|raw }}</pre>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+      (function($) {
+          $(document).ready(function() {
+            bibtexify("#{{ bibtex_id }}", "{{ bibtexify_id }}",
+            { {% for name,param in params %}
+                {{ name }} : {{ param }},
+              {% endfor %} } );
+          });
+      })(jQuery);
+  });
+</script>

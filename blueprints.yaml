@@ -1,0 +1,30 @@
+name: BibTeXify
+version: 1.0.0
+description: "This plugin turn a list of BibTeX references into an interactive page"
+icon: book
+author:
+  name: Cristian Martinez
+  email: me@martinec.org
+  url: http://martinec.org
+homepage: https://github.com/martinec/grav-plugin-bibtexify
+keywords: ui, plugin, bibtex, shortcode
+bugs: https://github.com/martinec/grav-plugin-bibtexify/issues
+docs: https://github.com/getgrav/grav-plugin-bibtexify/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - shortcode-core
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin Enabled
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
