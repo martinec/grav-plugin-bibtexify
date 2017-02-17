@@ -102,4 +102,4 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 
 # Credits
 
-This plugin use a minimal modified version of [bib-publication-list](https://github.com/vkaravir/bib-publication-list). The bib-publication-list author is [vkaravir](https://github.com/vkaravir).
+This plugin use a forked version of [bib-publication-list](https://github.com/vkaravir/bib-publication-list). The bib-publication-list author is [vkaravir](https://github.com/vkaravir).
