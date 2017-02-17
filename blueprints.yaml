@@ -1,5 +1,5 @@
 name: BibTeXify
-version: 1.0.0
+version: 1.1.0
 description: "This plugin turn a list of BibTeX references into an interactive page"
 icon: book
 author:
@@ -7,6 +7,7 @@ author:
   email: me@martinec.org
   url: http://martinec.org
 homepage: https://github.com/martinec/grav-plugin-bibtexify
+demo: http://unitexgramlab.org/related-publications
 keywords: ui, plugin, bibtex, shortcode
 bugs: https://github.com/martinec/grav-plugin-bibtexify/issues
 docs: https://github.com/martinec/grav-plugin-bibtexify/blob/master/README.md
