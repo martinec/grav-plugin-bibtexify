@@ -95,10 +95,10 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 - [bib-publication-list](https://github.com/vkaravir/bib-publication-list) have some issues dealing with escaped characters. A possible workaround is to use [JabRef](http://www.jabref.org) to convert the LaTeX encodings to Unicode characters as follows: `Menu Edit > Select All` then `Menu Quality > Cleanup entries`, finally add a new formatter for `all-text-fields` with the operation `Latex to Unicode` and click OK.
 - If the option to [enable automatic HTML links with Markdown](https://learn.getgrav.org/basics/grav-configuration#pages) has been activated globally, bibtexify links will break. To avoid this situation, you need to override the global setting per-page with the next markdown header option:
 
-    ```yaml
-    markdown:
-      auto_url_links: false
-    ```
+   ```yaml
+  markdown:
+     auto_url_links: false
+   ```
 
 # Credits
 
