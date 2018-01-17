@@ -26,10 +26,15 @@ span.undefined {
 
 .yearlabel {
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     text-align: center;
     width: 100%;
     font-size: small;
+-webkit-transform: rotate(-90deg); //Chrome, Safari
+-moz-transform: rotate(-90deg); //Firefox
+-o-transform: rotate(-90deg); //Opera
+-ms-transform: rotate(-90deg); //IE
+transform: rotate(-90deg); //браузеры без префексов
 }
 
 .pub {
