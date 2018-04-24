@@ -1,5 +1,11 @@
+# v1.1.1
+## 04/24/2018
+
+1. [](#improved)
+    * Turn vertically year labels
+
 # v1.1.0
-## 02/17/2016
+## 02/17/2017
 
 1. [](#new)
     * Allow to customize publication entries using CSS styles (feature-request #1)
