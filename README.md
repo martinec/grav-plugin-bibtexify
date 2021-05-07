@@ -1,3 +1,4 @@
+
 # Grav BibTeXify Plugin
 
 ![](assets/bibtexify.png)
@@ -89,6 +90,26 @@ Options can be passed as attributes of the shortcode, a summary of the current o
 <tr><td>hideMissing</td><td>A boolean to control when the missing mentions of a reference are visible. This option is not avalaible on the original bib-publication-list. Defaults to false.</td></tr>
 </tbody>
 </table>
+
+# Cookbook
+
+## Show only the first n authors
+
+Starting `v1.2.0`, this can be achieved using CSS.
+
+```css
+.bibtexify-authors li {
+  display:none;
+}
+
+.bibtexify-authors li:nth-child(-n+2) {
+  display: inline;
+}
+
+.bibtexify-authors .bibtexify-author-etal:before {
+  content: ", et al.";
+}
+```
 
 # Known issues
 

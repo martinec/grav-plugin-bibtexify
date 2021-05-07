@@ -30,11 +30,11 @@ span.undefined {
     text-align: center;
     width: 100%;
     font-size: small;
--webkit-transform: rotate(-90deg); //Chrome, Safari
--moz-transform: rotate(-90deg); //Firefox
--o-transform: rotate(-90deg); //Opera
--ms-transform: rotate(-90deg); //IE
-transform: rotate(-90deg); //браузеры без префексов
+    -webkit-transform: rotate(-45deg); //Chrome, Safari
+    -moz-transform: rotate(-45deg); //Firefox
+    -o-transform: rotate(-45deg); //Opera
+    -ms-transform: rotate(-45deg); //IE
+    transform: rotate(-45deg); //браузеры без префексов
 }
 
 .pub {
@@ -92,7 +92,7 @@ transform: rotate(-90deg); //браузеры без префексов
 
 .legend {
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
     width: 100%;
 }
@@ -265,4 +265,17 @@ a.bibtexify-link-bibtex {
 
 a.bibtexify-link-bibtex:hover {
   background-position: 0 -16px;
+}
+
+.bibtexify-authors {
+  display:inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bibtexify-authors li {
+  display:inline;
+  margin: 0;
+  padding: 0;
 }

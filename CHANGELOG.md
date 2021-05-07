@@ -1,3 +1,9 @@
+# v1.2.0
+## 05/07/2021
+
+1. [](#new)
+    * Allow to customize authors style using CSS (feature-request #11)
+
 # v1.1.1
 ## 04/24/2018
 

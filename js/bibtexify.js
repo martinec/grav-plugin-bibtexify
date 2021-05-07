@@ -2517,12 +2517,13 @@ var bibtexify = (function($) {
         },
         // converts the given author data into HTML
         authors2html: function(authorData) {
-            var authorsStr = '';
+            var authorsHtml = '';
             for (var index = 0; index < authorData.length; index++) {
-                if (index > 0) { authorsStr += ", "; }
-                authorsStr += authorData[index].last;
+                authorSep = index > 0 ? ", " : "";
+                authorsHtml = authorsHtml + '<li>' + '<span class="bibtexify-author-separator">' + authorSep + '<\/span>' + '<span  class="bibtexify-author"><span class="bibtexify-author-lastname">' + htmlify(authorData[index].last) + '<\/span><\/span>' + '<\/li>';
             }
-            return authorData ? '<span class="bibtexify-author">' + htmlify(authorsStr) + '<\/span>' : '';
+            var etalHtml = authorData.length > 2 ? '<span class="bibtexify-author-etal"><\/span>' : '';
+            return authorData ? '<ul class="bibtexify-authors">' + authorsHtml + etalHtml + '<\/ul>' : '';
         },
         // converts the given year data into HTML
         year2html: function(yearData) {
