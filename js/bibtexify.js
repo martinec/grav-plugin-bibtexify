@@ -2607,9 +2607,12 @@ var bibtexify = (function($) {
             if (entryData.url && entryData.url.match(/.*\.pdf/)) {
                 itemStr += ' <a class="bibtexify-link-pdf" target="_blank" title="PDF-version of this article" href="' +
                             entryData.url + '"><\/a>';
+            } else if (entryData.doi && !entryData.url) {
+                itemStr += ' <a class="bibtexify-link-online" target="_blank" title="This article online" href="' +
+                           'https://dx.doi.org/' + entryData.doi + '"><\/a>';
             } else if (entryData.url) {
-                itemStr += ' <a class="bibtexify-link-online" target="_blank" title="This article online" href="' + entryData.url +
-                            '"><\/a>';
+                itemStr += ' <a class="bibtexify-link-online" target="_blank" title="This article online" href="' +
+                           entryData.url + '"><\/a>';
             }
             return itemStr;
         },
